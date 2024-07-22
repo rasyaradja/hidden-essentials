@@ -14,6 +14,6 @@ tailwind.config = {
     },
   },
   daisyui: {
-    themes: ["dark"],
+    themes: [],
   },
 };
