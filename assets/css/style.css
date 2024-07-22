@@ -1,0 +1,12 @@
+@layer components {
+  ::selection {
+    background-color: #a6e22e;
+    color: #212529;
+  }
+
+  .scroll {
+    z-index: 50;
+    box-shadow: 0 0 10px rgba(7, 7, 7, 0.527);
+    background-color: #1d232a;
+  }
+}
