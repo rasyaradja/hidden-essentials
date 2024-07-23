@@ -33,7 +33,7 @@
               </ul>
             </div>
             <div class="flex-none lg:hidden">
-              <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+              <label for="my-drawer-3" aria-label="open sidebar" class="hover:cursor-pointer rounded-md p-1 btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -44,10 +44,19 @@
 
         <aside class="drawer-side">
           <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-          <ul class="menu bg-base-200 min-h-full w-80 p-4">
-            <li><a>Tentang Kami</a></li>
-            <li><a>Artikel</a></li>
-          </ul>
+          <div class="menu bg-base-200 min-h-full w-80 p-4">
+            <div class="flex justify-end">
+              <label for="my-drawer-3" aria-label="close sidebar" class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </label>
+            </div>
+            <ul>
+              <li><a>Tentang Kami</a></li>
+              <li><a>Artikel</a></li>
+            </ul>
+          </div>
         </aside>
       </nav>
     </header>
@@ -221,7 +230,7 @@
 
           <p class="text-lg mb-4">
             Sebagai contoh, tree untuk contoh struktur direktori <a class="text-hijau hover:bg-hijau hover:text-black" href="#snapshots">di atas</a> (divisualisasikan dengan menggunakan
-            <code class="text-base"><span class="bg-gray-700/50 px-1 rounded-md">git cat-file -p 698281bc680d1995c5f4caaf3359721a5a58d48d</span></code
+            <code class="text-xs sm:text-sm md:text-base"><span class="bg-gray-700/50 px-1 rounded-md whitespace-wrap">git cat-file -p 698281bc680d1995c5f4caaf3359721a5a58d48d</span></code
             >), terlihat seperti ini:
           </p>
 
@@ -233,7 +242,7 @@
           <p class="text-lg mb-4">
             tree itu sendiri berisi penunjuk ke isinya, <code class="text-base"><span class="bg-gray-700/50 px-1 rounded-md">baz.txt</span></code> (blob) dan
             <code class="text-base"><span class="bg-gray-700/50 px-1 rounded-md">foo</span></code> (sebuah tree). Jika kita melihat konten yang dialamatkan oleh hash yang berhubungan dengan baz.txt dengan
-            <code class="text-base"><span class="bg-gray-700/50 px-1 rounded-md">git cat-file -p 4448adbf7ecd394f42ae135bbeed9676e894af85</span></code
+            <code class="text-base text-xs sm:text-sm md:text-base"><span class="bg-gray-700/50 px-1 rounded-md">git cat-file -p 4448adbf7ecd394f42ae135bbeed9676e894af85</span></code
             >, kita mendapatkan berikut ini:
           </p>
 
@@ -563,6 +572,28 @@
       <article class="max-w-3xl mx-auto px-3 mt-10">
         <div id="disqus_thread"></div>
       </article>
+
+      <!-- audio-->
+      <div id="volume-control" class="fixed bottom-5 right-5 md:right-8 z-50">
+        <label class="swap swap-rotate">
+          <!-- hidden checkbox to control the state -->
+          <input type="checkbox" id="volume-toggle" onclick="toggleVolume()" />
+
+          <!-- volume on icon -->
+          <svg class="swap-on fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+          </svg>
+
+          <!-- volume off icon -->
+          <svg class="swap-off fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" />
+          </svg>
+        </label>
+      </div>
+
+      <audio id="background-audio" loop>
+        <source src="assets/music/OST Frieren - Years after the Death of Himmel.mp3" type="audio/mpeg" />
+      </audio>
     </main>
 
     <footer class="mt-10 mb-4">
