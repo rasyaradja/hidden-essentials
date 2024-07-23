@@ -18,7 +18,6 @@ function toggleVolume() {
 }
 
 function loadAudioState() {
-  // Always set the default state to off
   localStorage.setItem("isAudioPlaying", "false");
   volumeToggle.checked = false;
   audioElement.pause();
@@ -36,6 +35,6 @@ tailwind.config = {
     },
   },
   daisyui: {
-    themes: [],
+    themes: ['dark'],
   },
 };

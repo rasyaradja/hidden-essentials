@@ -9,20 +9,6 @@
     background-color: #1d232a !important;
   }
 
-  
-
-  /* :root,
-  .comments {
-    --magenta: #ff00ff;
-    --magenta-dark-box-shadow: #7f007f80;
-    --blackberry: #4b0a37;
-    --cyan: #83faff;
-    --midnight-blue: #111c7e;
-    --background-lightened: rgba(0, 0, 0, 0.9);
-    --body-text-on-black: #fff;
-    --background-black: #000000;
-  } */
-
   .scroll {
     z-index: 50;
     box-shadow: 0 0 10px rgba(7, 7, 7, 0.527);

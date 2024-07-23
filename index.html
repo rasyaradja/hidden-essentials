@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
-      #disqus_thread #layout {
-        background-color: #1d232a;
+      #disqus_thread a {
+        color: #a6e22e;
       }
+      /* iframe disqus */
     </style>
   </head>
   <body>
-    <header class="sticky top-0" id="navigation">
+    <header class="fixed top-0 start-0 z-40 w-full" id="navigation">
       <nav class="drawer max-w-3xl mx-auto">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
@@ -46,7 +47,7 @@
           <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
           <div class="menu bg-base-200 min-h-full w-80 p-4">
             <div class="flex justify-end">
-              <label for="my-drawer-3" aria-label="close sidebar" class="btn btn-square btn-ghost">
+              <label for="my-drawer-3" aria-label="close sidebar" class="hover:cursor-pointer rounded-md p-1 btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -61,7 +62,7 @@
       </nav>
     </header>
 
-    <main class="max-w-3xl mx-auto px-3">
+    <main class="max-w-3xl mx-auto px-3 mt-24">
       <article class="mt-8">
         <h1 class="text-4xl mb-6 font-bold">Version control (GIT)</h1>
         <section class="video mx-auto rounded-xl overflow-hidden mb-6">
@@ -580,12 +581,12 @@
           <input type="checkbox" id="volume-toggle" onclick="toggleVolume()" />
 
           <!-- volume on icon -->
-          <svg class="swap-on fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+          <svg class="swap-on fill-current text-hijau bg-gray-900 rounded-full border-2 border-hijau p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
             <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
           </svg>
 
           <!-- volume off icon -->
-          <svg class="swap-off fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+          <svg class="swap-off fill-current text-hijau bg-gray-900 rounded-full border-2 border-hijau p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
             <path d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" />
           </svg>
         </label>
