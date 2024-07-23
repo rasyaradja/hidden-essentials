@@ -9,21 +9,6 @@
     background-color: #1d232a !important;
   }
 
-<<<<<<< HEAD
-=======
-  /* :root,
-  .comments {
-    --magenta: #ff00ff;
-    --magenta-dark-box-shadow: #7f007f80;
-    --blackberry: #4b0a37;
-    --cyan: #83faff;
-    --midnight-blue: #111c7e;
-    --background-lightened: rgba(0, 0, 0, 0.9);
-    --body-text-on-black: #fff;
-    --background-black: #000000;
-  } */
-
->>>>>>> d362a38cfca127f79e394a9a976cdb8e217fba0a
   .scroll {
     z-index: 50;
     box-shadow: 0 0 10px rgba(7, 7, 7, 0.527);
@@ -49,45 +34,45 @@ h6 {
   color: #e9ecef;
 }
 
-ul {
+.content ul {
   list-style-position: inside;
   padding-left: 1rem;
 }
 
-ol {
+.content ol {
   margin-left: 1rem;
 }
 
-li > ul {
+.content li > ul {
   padding-left: 2rem;
 }
 
-ul li {
+.content ul li {
   list-style-type: none;
 }
 
-ul,
-ol {
+.content ul,
+.content ol {
   margin-bottom: 1rem;
 }
 
-ul ul,
-ol ul,
-ul ol,
-ol ol {
+.content ul ul,
+.content ol ul,
+.content ul ol,
+.content ol ol {
   margin-bottom: inherit;
 }
 
-ul li:before {
+.content ul li:before {
   content: "\2013  ";
   position: absolute;
   margin-left: -1rem;
 }
 
-ul.double-spaced li {
+.content ul.double-spaced li {
   margin-top: 1rem;
 }
 
-.hidden flex-none lg:block ul {
+.content .hidden flex-none lg:block ul {
   list-style: none;
 }
