@@ -73,9 +73,23 @@
           ></label>
           <div class="menu bg-base-200 min-h-full w-80 p-4">
             <div class="flex justify-end">
-              <label for="my-drawer-3" aria-label="close sidebar" class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              <label
+                for="my-drawer-3"
+                aria-label="close sidebar"
+                class="btn btn-square btn-ghost"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-6 w-6 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
                 </svg>
               </label>
             </div>
@@ -161,7 +175,7 @@
             Karena Interface Git adalah sebuah abstraksi, mempelajari Git secara
             top-down (mulai dengan interface / command-line interface) dapat
             menyebabkan banyak kebingungan. Anda mungkin dapat menghafal
-            beberapa perintah dan memikirkannya sebagai mantra sihir, dan ikuti
+            beberapa command dan memikirkannya sebagai mantra sihir, dan ikuti
             pendekatan dalam komik diatas setiap kali terjadi kesalahan.
           </p>
 
@@ -513,7 +527,7 @@
               >Pro Git</a
             >
             yang sangat direkomendasikan untuk informasi lebih lanjut, atau
-            tonton video lecturenya.
+            tonton video lecture diatas.
           </p>
 
           <h3 class="text-xl font-bold mb-4">Basics</h3>
@@ -621,7 +635,13 @@
                 ></code
               >: menampilkan cabang
             </li>
-            <li><code>git branch &lt;name&gt;</code>: membuat sebuah cabang</li>
+            <li>
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git branch &lt;name&gt;</span
+                ></code
+              >: membuat sebuah cabang
+            </li>
             <li>
               <code
                 ><span class="bg-gray-700/50 px-1 rounded-md"
@@ -829,8 +849,7 @@
                 >GUI Client</a
               >
               di luar sana untuk Git. Kami secara pribadi tidak menggunakannya
-              dan menggunakan baris perintah command-line interface sebagai
-              gantinya.
+              dan menggunakan command-line interface sebagai gantinya.
             </li>
             <li>
               <strong>Shell integration</strong>: sangat berguna untuk memiliki
@@ -861,10 +880,10 @@
               adalah standar untuk Vim.
             </li>
             <li>
-              <strong>Workflows</strong>: kami telah mengajarkan model data,
-              ditambah beberapa basic command; kami tidak memberi tahu anda
-              praktik apa yang harus diikuti ketika mengerjakan proyek besar
-              (dan ada
+              <strong>Workflows</strong>: kami telah mengajarkan model data
+              ditambah beberapa basic command; kami tidak memberi tahu anda best
+              practice apa yang harus diikuti ketika anda mengerjakan proyek
+              besar (dan ada
               <a
                 href="https://nvie.com/posts/a-successful-git-branching-model/"
                 class="text-hijau hover:bg-hijau hover:text-black"
@@ -997,15 +1016,44 @@
                   grafik.
                 </li>
                 <li>
-                  Siapa orang terakhir yang memodifikasi <code>README.md</code>?
-                  (Petunjuk: gunakan <code>git log</code> dengan sebuah
-                  argumen).
+                  Siapa orang terakhir yang memodifikasi
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >README.md</span
+                    ></code
+                  >? (Petunjuk: gunakan
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >git log</span
+                    ></code
+                  >
+                  dengan sebuah argumen).
                 </li>
                 <li>
                   Apa pesan commit yang terkait dengan modifikasi terakhir pada
-                  baris <code>collections:</code> dari <code>_config.yml</code>?
-                  (Petunjuk: gunakan <code>git blame</code> dan
-                  <code>git show</code>).
+                  baris
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >collections:</span
+                    ></code
+                  >
+                  dari
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >_config.yml</span
+                    ></code
+                  >? (Petunjuk: gunakan
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >git blame</span
+                    ></code
+                  >
+                  dan
+                  <code
+                    ><span class="bg-gray-700/50 px-1 rounded-md"
+                      >git show</span
+                    ></code
+                  >).
                 </li>
               </ol>
             </li>
@@ -1024,27 +1072,69 @@
             <li>
               Kloning beberapa repositori dari GitHub, dan modifikasi salah satu
               file yang ada. Apa yang terjadi ketika Anda melakukan
-              <code>git stash</code>? Apa yang Anda lihat ketika menjalankan
-              <code>git log --all --online</code>? Jalankan
-              <code>git stash pop</code> untuk membatalkan apa yang Anda lakukan
-              dengan <code>git stash</code>. Dalam skenario apa hal ini mungkin
-              berguna?
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git stash</span
+                ></code
+              >? Apa yang Anda lihat ketika menjalankan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git log --all --online</span
+                ></code
+              >? Jalankan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git stash pop</span
+                ></code
+              >
+              untuk membatalkan apa yang Anda lakukan dengan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git stash</span
+                ></code
+              >. Dalam skenario apa hal ini mungkin berguna?
             </li>
             <li>
               Seperti kebanyakan command-line tools, Git menyediakan berkas
-              konfigurasi (atau dotfile) yang disebut <code>~/.gitconfig</code>.
-              Buat sebuah alias di <code>~/.gitconfig</code> agar ketika kamu
-              menjalankan <code>git graph</code>, kamu akan mendapatkan output
-              dari <code>git log --all --graph --decorate --oneline</code>. Kamu
-              dapat melakukan ini dengan langsung
+              konfigurasi (atau dotfile) yang disebut
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >~/.gitconfig</span
+                ></code
+              >. Buat sebuah alias di
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >~/.gitconfig</span
+                ></code
+              >
+              agar ketika kamu menjalankan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git graph</span
+                ></code
+              >, kamu akan mendapatkan output dari
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git log --all --graph --decorate --oneline</span
+                ></code
+              >. Kamu dapat melakukan ini dengan langsung
               <a
                 href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias"
                 class="text-hijau hover:bg-hijau hover:text-black"
                 >mengedit berkas</a
               >
-              <code>~/.gitconfig</code>, atau kamu bisa menggunakan perintah
-              <code>git config</code> untuk menambahkan alias. Informasi tentang
-              alias git dapat ditemukan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >~/.gitconfig</span
+                ></code
+              >, atau kamu bisa menggunakan perintah
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git config</span
+                ></code
+              >
+              untuk menambahkan alias. Informasi tentang alias git dapat
+              ditemukan
               <a
                 href="https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases"
                 class="text-hijau hover:bg-hijau hover:text-black"
@@ -1053,12 +1143,24 @@
             </li>
             <li>
               Kamu bisa mendefinisikan global ignore patterns di
-              <code>~/.gitignore_global</code> setelah menjalankan
               <code
-                >git config --global core.excludesfile ~/.gitignore_global</code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >~/.gitignore_global</span
+                ></code
+              >
+              setelah menjalankan
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >git config --global core.excludesfile
+                  ~/.gitignore_global</span
+                ></code
               >. Lakukan ini, dan atur file gitignore global kamu untuk
               mengabaikan file khusus OS atau editor file sementara, seperti
-              <code>.DS_Store</code>.
+              <code
+                ><span class="bg-gray-700/50 px-1 rounded-md"
+                  >.DS_Store</span
+                ></code
+              >.
             </li>
             <li>
               Fork
@@ -1092,13 +1194,29 @@
           <input type="checkbox" id="volume-toggle" onclick="toggleVolume()" />
 
           <!-- volume on icon -->
-          <svg class="swap-on fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-            <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+          <svg
+            class="swap-on fill-current rounded-full border-2 border-gray-300 p-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"
+            />
           </svg>
 
           <!-- volume off icon -->
-          <svg class="swap-off fill-current rounded-full border-2 border-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-            <path d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" />
+          <svg
+            class="swap-off fill-current rounded-full border-2 border-gray-300 p-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z"
+            />
           </svg>
         </label>
       </div>
