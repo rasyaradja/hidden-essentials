@@ -1,3 +1,11 @@
+:root {
+  color-scheme: none;
+}
+
+#disqus_thread a {
+  color: #a6e22e;
+}
+
 @layer components {
   ::selection {
     background-color: #a6e22e;
@@ -75,4 +83,12 @@ h6 {
 
 .content .hidden flex-none lg:block ul {
   list-style: none;
+}
+
+.nav-links.active-link {
+  color: #a6e22e;
+}
+
+.drawer-side.nav-links {
+  color: #a6e22e;
 }

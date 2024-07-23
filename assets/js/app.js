@@ -1,13 +1,9 @@
 const navigation = document.querySelector("#navigation");
 
-document.addEventListener("scroll", () => {
-  navigation.classList.toggle("scroll", window.scrollY > 0);
-});
-
 const audioElement = document.getElementById("background-audio");
 const volumeToggle = document.getElementById("volume-toggle");
 
-function toggleVolume() {
+const toggleVolume = () => {
   if (volumeToggle.checked) {
     audioElement.play();
     localStorage.setItem("isAudioPlaying", "true");
@@ -15,15 +11,40 @@ function toggleVolume() {
     audioElement.pause();
     localStorage.setItem("isAudioPlaying", "false");
   }
-}
+};
 
-function loadAudioState() {
+const loadAudioState = () => {
   localStorage.setItem("isAudioPlaying", "false");
   volumeToggle.checked = false;
   audioElement.pause();
-}
+};
 
 document.addEventListener("DOMContentLoaded", loadAudioState);
+
+const articles = document.querySelectorAll("article");
+const navLinks = document.querySelectorAll("header nav a");
+
+window.onscroll = () => {
+  navigation.classList.toggle("scroll", window.scrollY > 0);
+
+  articles.forEach((article) => {
+    const top = window.scrollY;
+    const offset = article.offsetTop - 70;
+    const height = article.offsetHeight;
+    const idSection = article.getAttribute("id");
+
+    if (top > offset && top < offset + height) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active-link");
+      });
+
+      const activeLink = document.querySelector(`header nav a[href*='${idSection}']`);
+      if (activeLink) {
+        activeLink.classList.add("active-link");
+      }
+    }
+  });
+};
 
 tailwind.config = {
   theme: {
@@ -35,6 +56,6 @@ tailwind.config = {
     },
   },
   daisyui: {
-    themes: ['dark'],
+    themes: ["dark"],
   },
 };
